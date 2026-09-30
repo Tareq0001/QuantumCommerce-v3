@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Quantum | E-Commerce 3.0</title><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+      <nav class="navbar">
+        <div class="logo">QUANTUM<span>.</span></div>
+        <div class="nav-links"><span>Discover</span><span>Collections</span><span>Tech</span></div>
+        <div class="cart-btn" id="cart-toggle">🛒 Cart <span class="badge" id="cart-badge">0</span></div>
+      </nav>
+      
+      <header class="hero">
+        <div class="hero-content">
+          <h1>The Future of<br><span class="text-amber">Performance.</span></h1>
+          <p>Experience the next generation of computing power.</p>
+          <button class="btn-glow">Explore Series X</button>
+        </div>
+        <div class="hero-image"><div class="glow-orb"></div></div>
+      </header>
+
+      <div class="products">
+        <div class="product-card">
+          <div class="img-mock">💻</div>
+          <h3>Quantum Book Pro</h3>
+          <p>$1,999.00</p>
+          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <div class="img-mock">🎧</div>
+          <h3>Sonic Waves Max</h3>
+          <p>$349.00</p>
+          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <div class="img-mock">⌚</div>
+          <h3>Chrono Sync V2</h3>
+          <p>$299.00</p>
+          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header"><h2>Your Cart</h2><button id="close-cart">✕</button></div>
+        <div id="cart-items" class="cart-items"><p style="color:#52525b">Cart is empty.</p></div>
+        <div class="cart-footer">
+          <div class="total"><span>Total</span><span id="total-val" class="text-amber">$0.00</span></div>
+          <button class="btn-glow" style="width:100%">Checkout</button>
+        </div>
+      </div>
+      <script src="app.js"></script></body></html>
